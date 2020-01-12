@@ -1,0 +1,41 @@
+html {
+  --bg: #333333;
+  --primary-color: #61dafb;
+
+  --grad1: rgb(40, 44, 52);
+  --grad2: rgba(40, 44, 52, 0.83);
+  --grad3: rgba(40, 44, 52, 0.22);
+  --grad4: rgba(40, 44, 52, 0.063);
+
+  --bg-hero: linear-gradient(
+      60deg,
+      var(--grad1),
+      var(--grad2),
+      var(--grad3),
+      var(--grad4)
+    ),
+    url("../images/board1.png");
+}
+
+html[data-theme="light"] {
+  --bg: #fcfcfc;
+  --primary-color: #61dafb;
+
+  --bg-panel: #434343;
+  --color-headings: #3694ff;
+  --color-text: #b5b5b5;
+
+  --grad1: rgb(40, 44, 52);
+  --grad2: rgba(40, 44, 52, 0.83);
+  --grad3: rgba(40, 44, 52, 0.22);
+  --grad4: rgba(40, 44, 52, 0.063);
+
+  --bg-hero: linear-gradient(
+      60deg,
+      var(--grad1),
+      var(--grad2),
+      var(--grad3),
+      var(--grad4)
+    ),
+    url("../images/hero-1.png");
+}
