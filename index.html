@@ -19,5 +19,23 @@
         </div>
       </div>
     </div>
+
+    <script>
+      // toggle theme
+      var checkbox = document.querySelector("input[name=theme]");
+      checkbox.addEventListener("change", function() {
+        trans();
+        document.documentElement.setAttribute(
+          "data-theme",
+          this.checked ? "dark" : "light"
+        );
+      });
+      let trans = () => {
+        document.documentElement.classList.add("transition");
+        window.setTimeout(() => {
+          document.documentElement.classList.remove("transition");
+        }, 500);
+      };
+    </script>
   </body>
 </html>
