@@ -82,6 +82,12 @@ button:hover {
   width: 114rem;
 }
 
+.section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  min-height: 60vh;
+}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
   html {
