@@ -29,14 +29,16 @@ time, mark, audio, video {
 html {
   font-size: 62.5%; /* now 10px = 1rem! */
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #4a4a4a;
 }
 
 body {
   font-size: 18px; /* px fallback */
   font-size: 1.8rem; /* default font-size for document */
-  font-family: "Montserrat", sans-serif;
+
   line-height: 2.9rem;
-  color: #4a4a4a;
+
   overflow-x: hidden;
 }
 
@@ -71,7 +73,7 @@ button:hover {
   margin: 1px auto;
   margin-top: 0;
   margin-bottom: 0;
-  width: 120rem;
+  width: 114rem;
 }
 
 /* Large Devices, Wide Screens */

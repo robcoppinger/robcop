@@ -1,6 +1,7 @@
 html[data-theme="dark"] {
   --bg: #333333;
   --primary-color: #61dafb;
+  --color-text: #b5b5b5;
 
   --grad1: rgb(40, 44, 52);
   --grad2: rgba(40, 44, 52, 0.83);
@@ -19,11 +20,11 @@ html[data-theme="dark"] {
 
 html[data-theme="light"] {
   --bg: #fcfcfc;
-  --primary-color: #282c34;
+  --primary-color: #ec6808;
 
   --bg-panel: #ebebeb;
   --color-headings: #3694ff;
-  --color-text: #b5b5b5;
+  --color-text: #4a4a4a;
 
   --grad1: rgb(255, 255, 255);
   --grad2: rgba(255, 255, 255, 0.83);
@@ -42,4 +43,12 @@ html[data-theme="light"] {
   .bannerContainer {
     background-position: bottom;
   }
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 500ms !important;
+  transition-delay: 0 !important;
 }
