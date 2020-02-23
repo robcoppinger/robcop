@@ -1,7 +1,9 @@
 html[data-theme="dark"] {
   --bg: #333333;
+  --bg2: #3d3d3d;
   --primary-color: #61dafb;
   --color-text: #c5c5c5;
+  --card-color: #424242;
   --grad1: rgb(40, 44, 52);
   --grad2: rgba(40, 44, 52, 0.83);
   --grad3: rgba(40, 44, 52, 0.22);
@@ -23,8 +25,10 @@ html[data-theme="dark"] .bannerContainer {
 }
 
 html[data-theme="light"] {
-  --bg: #fcfcfc;
+  --bg: #e4e4e4;
+  --bg2: #e0e0e0;
   --primary-color: #ec6808;
+  --card-color: #f3f2f2;
   --bg-panel: #ebebeb;
   --color-headings: #3694ff;
   --color-text: #4a4a4a;

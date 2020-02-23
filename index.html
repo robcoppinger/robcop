@@ -43,9 +43,43 @@
       </div>
     </div>
 
-    <div class="contentContainer section"><h2>Hi there</h2></div>
+    <!-- Full Stack animation section -->
+    <div class="contentContainer section fullStackSection">
+      <div class="fullStackTextContainer lax" data-lax-translate-y="400 0, 800 -120">
+        <h1>Full Stack</h1>
+        <h3>developer</h3>
+      </div>
+      <div class="imageContainer laptop">
+        <div class="card lax" data-lax-translate-y="200 0, 800 50">
+          <img src="./images/Laptop.svg" />
+        </div>
+      </div>
+      <div class="imageContainer mobile">
+        <div class="card lax" data-lax-translate-y="200 0, 800 50">
+          <img src="./images/Mobile.svg" />
+        </div>
+      </div>
+      <div class="imageContainer database">
+        <h1 class="card lax" style="width: 100%; height: 22rem" data-lax-translate-y="400 0, 800 -190">
+          <img src="./images/Database.svg" />
+        </div>
+      </div>
+    </div>
 
+    <div class="section"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
     <script>
+      window.onload = function() {
+        lax.setup(); // init
+
+        const updateLax = () => {
+          lax.update(window.scrollY);
+          window.requestAnimationFrame(updateLax);
+        };
+
+        window.requestAnimationFrame(updateLax);
+      };
       // toggle theme
       var checkbox = document.querySelector("input[name=theme]");
       checkbox.addEventListener("change", function() {

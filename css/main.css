@@ -57,10 +57,112 @@ h2 {
   width: 45rem;
 }
 
+.card {
+  background-color: var(--card-color);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.09);
+  padding: 2rem;
+}
+
 input[type="checkbox"] {
   height: 0;
   width: 0;
   visibility: hidden;
+}
+
+.fullStackSection {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 20rem 20rem;
+      grid-template-rows: 20rem 20rem;
+  grid-row-gap: 4rem;
+  grid-column-gap: 4rem;
+      grid-template-areas: "laptop fullStack mobile" "open1 database open2";
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.fullStackSection .fullStackTextContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fullStackSection .fullStackTextContainer h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+}
+
+.fullStackSection .fullStackTextContainer h3 {
+  margin-left: 1.5rem;
+  font-weight: lighter;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 1.1rem;
+  text-align: center;
+}
+
+.fullStackSection .imageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fullStackSection .imageContainer img {
+  width: 100%;
+  height: 80%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.fullStackSection .card {
+  width: 90%;
+  height: 20rem;
+}
+
+.fullStackSection .laptop {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: laptop;
+}
+
+.fullStackSection .mobile {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: mobile;
+}
+
+.fullStackSection .database {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: database;
 }
 
 label {
