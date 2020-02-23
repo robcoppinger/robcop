@@ -15,8 +15,20 @@ h2 {
   background: var(--bg-hero);
   padding-top: 5rem;
   padding-bottom: 10rem;
-  height: 90vh;
+  height: calc(100vw * 9 / 16);
   background-size: cover !important;
+  position: relative;
+
+  .foregroundImage,
+  .backgroundImage {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  .backgroundImage {
+    z-index: -2;
+  }
 }
 .bannerGrid {
   display: grid;
@@ -70,8 +82,7 @@ input[type="checkbox"] {
   grid-row-gap: 4rem;
   grid-column-gap: 4rem;
   grid-template-areas: "laptop fullStack mobile" "open1 database open2";
-  margin-top: 5rem;
-  padding-bottom: 5rem;
+  background-color: var(--bg);
 
   .fullStackTextContainer {
     display: flex;

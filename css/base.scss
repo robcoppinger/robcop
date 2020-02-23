@@ -80,6 +80,7 @@ button:hover {
   padding-top: 15rem;
   padding-bottom: 15rem;
   min-height: 60vh;
+  background-color: var(--bg);
   &:nth-child(odd) {
     background-color: var(--bg2);
   }
